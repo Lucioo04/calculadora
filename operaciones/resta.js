@@ -6,4 +6,4 @@ function resta(num1,num2) {
 return resultado = num1 - num2;
 
 }
-module.export={resta}
+module.exports={resta}
