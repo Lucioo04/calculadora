@@ -2,6 +2,12 @@ const fs = require ('fs');
 const path = require('path');
 const ruta = __dirname +"/data/registros.json"
 
+function leerJson () {
+    const json = fs.readFileSync(ruta, 'utf-8');
+    const array = JSON.parse(json);
+    return array;
+}
+
 function escribirJson (registro) {
     if(fs.existsSync(ruta)){
         fs.readFile(ruta, 'utf8', function readFileCallback(err, data){
@@ -25,6 +31,7 @@ function escribirJson (registro) {
 }
 
 module.exports = {
+    leerJson,
     escribirJson
 }
 
