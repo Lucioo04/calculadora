@@ -25,7 +25,7 @@ function escribirJson (registro) {
 }
 
 module.exports = {
-    escribirJson
+escribirJson
 }
 
 
