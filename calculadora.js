@@ -3,8 +3,8 @@ const {suma} = require ("./operaciones/suma")
 const {resta} = require ("./operaciones/resta")
 const {multiplicacion} = require ("./operaciones/multiplicacion")
 const {division} = require ("./operaciones/division")
-let a = process.argv[3]
-let b = process.argv[4]
+let a = +process.argv[3]
+let b = +process.argv[4]
 let operacion = process.argv[2].toLowerCase();
 function calculadora(){
     switch(operacion){
