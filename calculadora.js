@@ -9,7 +9,7 @@ let operacion = process.argv[2].toLowerCase();
 function calculadora(){
     switch(operacion){
         case "suma":
-            result= sumar(a,b);
+            result= suma(a,b);
             console.log (result);
             registro = {"Operacion":operacion, "Resultado":result};
             escribirJson (registro)
@@ -21,7 +21,7 @@ function calculadora(){
             escribirJson (registro)
             break;
         case "multiplicacion":
-            result= multiplicar(a,b);
+            result= multiplicacion(a,b);
             console.log (result);
             registro = {"Operacion":operacion, "Resultado":result};
             escribirJson (registro)
@@ -36,7 +36,7 @@ function calculadora(){
             console.log (leerJson());    
             break;
         default:
-            console.log("Operaciones Validas : Sumar - Resta - Division - Multiplicacion - Historial");
+            console.log("Operaciones Validas : Suma - Resta - Division - Multiplicacion - Historial");
     }
     }
 
