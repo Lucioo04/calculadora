@@ -1,0 +1,5 @@
+const {escribirJson} = require ("./escribir.js")
+const {suma} = require ("./operaciones/suma")
+const {resta} = require ("./operaciones/resta")
+const {multiplicacion} = require ("./operaciones/multiplicacion")
+const {division} = require ("./operaciones/division")
